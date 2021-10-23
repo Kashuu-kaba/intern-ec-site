@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介サイト</title>
+    <link rel="stylesheet" href="./css/css-5.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+  <header>
+    <div><h1 class="logo"><a href="./top.html"> 山田養蜂場</a></h1></div>
+    <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+  </header>
+  <div class="main">
+  <div class="login-box">
+    <h1 class="login-ttl">LoginPage</h1>
+    <form class="login-form" action="login.php" method="post">
+      <div class="form-group">
+        <label class="login-form__label">Your Name</label>
+        <input class="login-form__input" type="text" name="user[name]">
+      </div>
+      <div class="form-group">
+        <label class="login-form__label">email</label>
+        <input class="login-form__input" type="text" name="user[email]">
+      </div>
+      <div class="form-group">
+        <label class="login-form__label">password</label>
+        <input class="login-form__input" type="text" name="user[password]">
+      </div>
+      <!-- <div class="form-group">
+        <label class="login-form__label">Choice Your Color</label>
+        <select class="login-form__select" name="user[color]">
+          <option value="black">Black</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+          <option></option>
+        </select>
+      </div> -->
+      <button class="login__submit" type="submit">Log in</button>
+    </form>
+  </div>
+</div>
+</body>

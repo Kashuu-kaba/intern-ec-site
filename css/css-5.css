@@ -1,0 +1,222 @@
+body{
+  margin: 0;
+}
+header{
+  background-color: green;
+  width: 100%;
+  height: 60px;
+  border-bottom: 5px solid black;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  /* position: relative; */
+}
+.logo{
+  margin: 0 60px;
+  height: 100%;
+  line-height: 60px;
+  font-size: 24px;
+}
+.nav-toggle{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+span{
+  display: block;
+  height: 5px;
+  width: 40px;
+  margin: 5px 10px;
+  border-radius: 2px;
+  background-color: black;
+  transition: .3s;
+}
+.open span:nth-child(1){
+  display: block;
+  width: 40px;
+  border-radius: 2px;
+  background-color: black;
+  transition: .3s;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 25px;
+}
+.open span:nth-child(2){
+  opacity: 0;
+}
+.open span:nth-child(3){
+  display: block;
+  width: 40px;
+  border-radius: 2px;
+  background-color: black;
+  transition:.3s;
+  transform: rotate(-45deg);
+  position:absolute;
+  bottom: 20px;
+}
+.nav-wrapper{
+  position: fixed;
+  top: 60px;
+  right: -200px;
+  height: 100%;
+  width: 200px;
+  background-color: black;
+  transition: 300ms;
+}
+.open{
+  right: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  margin: 10%;
+}
+a{
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+a:hover{
+  background-color: white;
+  color: black;
+}
+.main{
+  width: 100%;
+  height: calc(100vh - 60px);
+  /* position: absolute; */
+  top: 60px;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.box{
+  width: 50%;
+  height: 50%;
+}
+.upper-left{
+  /* background-color: greenyellow; */
+  background-image: url(../img/rails_sample.png);
+  background-size: cover;
+}
+.upper-right{
+  background-color: yellow;
+}
+.bottom-left{
+  background-color: violet;
+}
+.bottom-right{
+  background-color: blueviolet;
+}
+.top-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.element{
+  height: 150px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 5px auto;
+  border: 5px solid rgba(177, 168, 168, 0.603);
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.element:hover{
+  opacity: 0.5;
+}
+.element-image{
+  height:8rem;
+  width: 12rem;
+}
+.element img{
+  margin: 10px;
+  height:90%;
+  width: 90%;
+}
+.element-container{
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+}
+/* ログイン */
+.login-box {
+  width: 40rem;
+  margin: 0 auto;
+  background-color: #509507;
+  padding-top: 1rem;
+  border-radius: 1rem;
+}
+
+.login-ttl {
+  text-align: center;
+  color: #ffffff;
+}
+
+.login-form {
+  padding: 2rem 4rem;
+  background: #69c803;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.login-form__label {
+  width: 100%;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.login-form__input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.login-form__select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: none;
+  font-size: 16px;
+  padding: 0px;
+  height: 33px;
+  width: 100%;
+}
+
+.login__submit {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #03ACC8;
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.example2 li{
+  display: inline;
+  padding: 10px 15px;
+  border: 1px #ccc solid; 
+  color: #000053;
+  border-radius: 5px / 5px;
+}
+.example2 .this {
+  background-color:#777;color:#fff;
+}

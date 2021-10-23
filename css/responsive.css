@@ -1,0 +1,47 @@
+@media(max-width: 960px){
+
+}
+
+@media(max-width: 560px){
+    article{
+        height: 500px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 25px 5px;
+        border: 5px solid rgba(177, 168, 168, 0.603);
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    .modal-article{
+        height: 70%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding:0;
+    } 
+    .modal-container{
+        width: 100%;
+        text-align: center;
+        margin: -50px;
+    }
+    .modal-close-btn{
+        width: 100px;
+        height: 50px;
+        border: 1px solid black;
+        margin-top: 70px;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .nav-items{
+        display: none;
+    }
+    .contents{
+        display: flex;
+        flex-direction: column;
+    }
+}

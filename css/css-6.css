@@ -1,0 +1,28 @@
+.container{
+  width: 100%;
+  margin: 20px 80px;
+  background-color: aqua;
+  display: flex;
+}
+.img-wrapper{
+  width: 30%;
+  height: 50%;
+  padding: 1rem;
+  background: #caba2e53;
+}
+.img-wrapper img{
+  width: 100%;
+  height: 100%;
+}
+.text-box{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.text-box p {
+  color: #fff;
+}
+.to-cart{
+  text-align: center;
+}
